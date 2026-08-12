@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-blue: #0092bc;
+  --color-brand-blue-dark: #007494;
+  --color-brand-blue-light: #e6f5f9;
+
+  --color-dark-gray: #1f2937;
+  --color-medium-gray: #6b7280;
+  --color-light-gray: #f3f4f6;
+  --color-border-gray: #e5e7eb;
+
+  --color-status-success: #10b981;
+  --color-status-success-bg: #ecfdf5;
+  --color-status-warning: #f59e0b;
+  --color-status-warning-bg: #fffbeb;
+  --color-status-error: #ef4444;
+  --color-status-error-bg: #fef2f2;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  background-color: #f8f9fb;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.app-card-accent {
+  border-left-width: 4px;
+}
+
+.app-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.app-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.app-tab {
+  position: relative;
+  padding: 12px 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.app-tab:hover {
+  color: #1f2937;
+}
+
+.app-tab-active {
+  color: #0092bc;
+  border-bottom-color: #0092bc;
+}
